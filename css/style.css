@@ -4,17 +4,17 @@
 }
 
 body {
-    background-color: #555;
+    background-color: rgb(119, 194, 243);
 }
 
 #container {
-    width: 905px;
+    width: 920px;
     height: 615px;
     border: 1px solid #111;
     position: relative;
     margin: 10px auto;
     border-radius: 10px;
-    background-color: lightyellow;
+    background-color: rgb(193, 228, 252);
 }
 
 .card{
