@@ -14,6 +14,8 @@
 
     function starGame(){
 
+        imagens = randomSort(imagens);
+
         var frontFaces = document.getElementsByClassName("front");
 
         for(var i = 0; i < 6; i++){
@@ -27,6 +29,20 @@
             frontFaces[i].setAttribute("id", imagens[i].id);
             console.log(frontFaces[i].id);
         }
+    }
+
+    function randomSort(oldArray){
+        var newArray = [];
+
+        while(newArray.length !== oldArray.length){
+            var i = Math.floor(Math.random()*oldArray.length);
+
+            if(newArray.indexOf(oldArray[i]) < 0){
+                newArray.push(oldArray[i]);
+            }
+        }
+
+        return newArray;
     }
 
     function flipCard(){
