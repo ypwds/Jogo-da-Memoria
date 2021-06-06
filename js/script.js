@@ -45,7 +45,6 @@
 
             frontFaces[i].style.background = "url('"+ imagens[i].src +"')";
             frontFaces[i].setAttribute("id", imagens[i].id);
-            console.log(frontFaces[i].id);
         }
 
         modalGameOver.style.zIndex = -2;
